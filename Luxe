@@ -1,0 +1,337 @@
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleAura & Essence - Perfumes & Cosmeticstitle
+    !-- Google Fonts & FontAwesome for icons --
+    link href=httpsfonts.googleapis.comcss2family=Poppinswght@300;400;500;600;700&display=swap rel=stylesheet
+    link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.4.0cssall.min.css
+    
+    style
+         {
+            margin 0;
+            padding 0;
+            box-sizing border-box;
+            font-family 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color #fff;
+            color #333;
+        }
+
+         HEADER 
+        header {
+            display flex;
+            align-items center;
+            justify-content space-between;
+            padding 15px 50px;
+            border-bottom 1px solid #eaeaea;
+        }
+
+        .logo {
+            font-size 24px;
+            font-weight 700;
+            letter-spacing 1px;
+            color #111;
+        }
+
+        .search-bar {
+            display flex;
+            align-items center;
+            background #f4f4f4;
+            border-radius 30px;
+            padding 8px 20px;
+            width 40%;
+        }
+
+        .search-bar input {
+            border none;
+            background transparent;
+            outline none;
+            width 100%;
+            padding-left 10px;
+            font-size 14px;
+        }
+
+        .header-icons {
+            display flex;
+            gap 20px;
+            font-size 20px;
+            color #333;
+            cursor pointer;
+        }
+
+        .cart-icon {
+            position relative;
+        }
+
+        .cart-badge {
+            position absolute;
+            top -8px;
+            right -10px;
+            background #ff3366;
+            color white;
+            font-size 11px;
+            padding 2px 6px;
+            border-radius 50%;
+        }
+
+         CATEGORY PILLS NAV 
+        .sub-nav {
+            display flex;
+            gap 12px;
+            padding 12px 50px;
+            overflow-x auto;
+            border-bottom 1px solid #eaeaea;
+            white-space nowrap;
+        }
+
+        .sub-nav-webkit-scrollbar {
+            display none;
+        }
+
+        .pill {
+            padding 8px 18px;
+            border 1px solid #ddd;
+            border-radius 20px;
+            font-size 13px;
+            font-weight 500;
+            background #fff;
+            cursor pointer;
+            transition 0.3s;
+        }
+
+        .pillhover, .pill.active {
+            background #111;
+            color #fff;
+            border-color #111;
+        }
+
+        .pill.highlight {
+            background #fff0f3;
+            color #ff3366;
+            border-color #ff3366;
+        }
+
+         HERO BANNER 
+        .hero-container {
+            padding 20px 50px;
+        }
+
+        .hero-banner {
+            background linear-gradient(135deg, #4a0e17 0%, #8b1e3f 100%);
+            border-radius 16px;
+            color white;
+            display flex;
+            justify-content space-between;
+            align-items center;
+            padding 50px;
+            position relative;
+            overflow hidden;
+        }
+
+        .hero-text h1 {
+            font-size 42px;
+            font-weight 700;
+            line-height 1.2;
+        }
+
+        .hero-text h1 span {
+            color #ffd700;
+        }
+
+        .hero-text p {
+            margin-top 15px;
+            font-size 16px;
+            opacity 0.9;
+        }
+
+        .hero-dots {
+            position absolute;
+            bottom 15px;
+            right 50px;
+            display flex;
+            gap 8px;
+        }
+
+        .dot {
+            width 8px;
+            height 8px;
+            background rgba(255,255,255,0.5);
+            border-radius 50%;
+            cursor pointer;
+        }
+
+        .dot.active {
+            background #fff;
+            width 20px;
+            border-radius 4px;
+        }
+
+         TOP CATEGORIES 
+        .categories-section {
+            padding 40px 50px;
+        }
+
+        .section-header {
+            display flex;
+            justify-content space-between;
+            align-items center;
+            margin-bottom 30px;
+        }
+
+        .section-header h2 {
+            font-size 24px;
+            font-weight 700;
+            letter-spacing 0.5px;
+        }
+
+        .see-all {
+            border 1px solid #ddd;
+            padding 8px 20px;
+            border-radius 20px;
+            background #fff;
+            cursor pointer;
+            font-weight 500;
+            font-size 14px;
+        }
+
+        .categories-grid {
+            display grid;
+            grid-template-columns repeat(auto-fit, minmax(150px, 1fr));
+            gap 30px;
+            text-align center;
+        }
+
+        .category-card {
+            cursor pointer;
+        }
+
+        .category-img-container {
+            width 140px;
+            height 140px;
+            margin 0 auto 15px auto;
+            border-radius 50%;
+            padding 4px;
+            background linear-gradient(135deg, #ff758c, #ff7eb3);
+            display flex;
+            align-items center;
+            justify-content center;
+            transition transform 0.3s;
+        }
+
+        .category-cardhover .category-img-container {
+            transform scale(1.05);
+        }
+
+        .category-img-container img {
+            width 100%;
+            height 100%;
+            object-fit cover;
+            border-radius 50%;
+            border 3px solid #fff;
+        }
+
+        .category-card h3 {
+            font-size 15px;
+            font-weight 600;
+            color #222;
+        }
+    style
+head
+body
+
+    !-- Header --
+    header
+        div class=logoAURA & ESSENCEdiv
+        div class=search-bar
+            i class=fa-solid fa-magnifying-glass style=color #888;i
+            input type=text placeholder=Search for luxury perfumes, lipsticks, foundations...
+        div
+        div class=header-icons
+            i class=fa-regular fa-useri
+            div class=cart-icon
+                i class=fa-solid fa-bag-shoppingi
+                span class=cart-badge2span
+            div
+        div
+    header
+
+    !-- Sub Navigation Pills --
+    div class=sub-nav
+        button class=pill highlight🔥 Luxury Fragrancesbutton
+        button class=pill activeAll Makeupbutton
+        button class=pillNew Arrivalsbutton
+        button class=pillBest Sellersbutton
+        button class=pillLipsticksbutton
+        button class=pillEau de Parfumbutton
+        button class=pillFace & Foundationbutton
+        button class=pillSkincare Setsbutton
+    div
+
+    !-- Hero Banner --
+    div class=hero-container
+        div class=hero-banner
+            div class=hero-text
+                h1Luxury Perfume FestbrUp To span50% OFFspanh1
+                pDiscover signature scents & premium cosmetics at discounted prices.p
+            div
+            div class=hero-dots
+                span class=dot activespan
+                span class=dotspan
+                span class=dotspan
+            div
+        div
+    div
+
+    !-- Top Categories --
+    div class=categories-section
+        div class=section-header
+            h2TOP CATEGORIESh2
+            button class=see-allSee All i class=fa-solid fa-arrow-rightibutton
+        div
+
+        div class=categories-grid
+            div class=category-card
+                div class=category-img-container
+                    img src=httpsimages.unsplash.comphoto-1541643600914-78b084683601w=300 alt=Perfumes
+                div
+                h3Perfumesh3
+            div
+            div class=category-card
+                div class=category-img-container
+                    img src=httpsimages.unsplash.comphoto-1522337360788-8b13dee7a37ew=300 alt=Makeup
+                div
+                h3Makeuph3
+            div
+            div class=category-card
+                div class=category-img-container
+                    img src=httpsimages.unsplash.comphoto-1596462502278-27bfdc403348w=300 alt=Lipsticks
+                div
+                h3Lipsticksh3
+            div
+            div class=category-card
+                div class=category-img-container
+                    img src=httpsimages.unsplash.comphoto-1512496015851-a90fb38ba796w=300 alt=Skincare
+                div
+                h3Skincareh3
+            div
+            div class=category-card
+                div class=category-img-container
+                    img src=httpsimages.unsplash.comphoto-1588405748880-12d1d2a59f75w=300 alt=Gift Sets
+                div
+                h3Gift Setsh3
+            div
+            div class=category-card
+                div class=category-img-container
+                    img src=httpsimages.unsplash.comphoto-1532414397459-7813fb4925b2w=300 alt=Accessories
+                div
+                h3Brushes & Toolsh3
+            div
+        div
+    div
+
+body
+html
